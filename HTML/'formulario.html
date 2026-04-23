@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário de Cadastro</h1>
+
+    <form>
+
+        <!-- Parte 1 -->
+        <h2>Informações básicas</h2>
+
+        Nome completo:<br>
+        <input type="text" name="nome"><br><br>
+
+        E-mail:<br>
+        <input type="email" name="email"><br><br>
+
+        Senha:<br>
+        <input type="password" name="senha"><br><br>
+
+        <!-- Parte 2 -->
+        <h2>Dados pessoais</h2>
+
+        Data de nascimento:<br>
+        <input type="date" name="data"><br><br>
+
+        Idade:<br>
+        <input type="number" name="idade" min="0" max="120"><br><br>
+
+        Cor favorita:<br>
+        <input type="color" name="cor"><br><br>
+
+        <!-- Parte 3 -->
+        <h2>Preferências</h2>
+
+        Gênero:<br>
+        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="feminino"> Feminino<br>
+        <input type="radio" name="genero" value="outro"> Outro<br><br>
+
+        Interesses:<br>
+        <input type="checkbox" name="interesse" value="BUDISMO"> BUDISMO<br>
+        <input type="checkbox" name="interesse" value="musica"> Música<br>
+        <input type="checkbox" name="interesse" value="LIVROS"> LIVROS<br>
+        <input type="checkbox" name="interesse" value="HISTORIA"> HISTORIA<br><br>
+        Upload de arquivo:<br>
+        <input type="file" name="arquivo"><br><br>
+
+    </form>
+
+</body>
+</html>
