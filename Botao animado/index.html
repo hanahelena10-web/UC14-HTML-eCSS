@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Animação fofa</title>
+    <style>
+        @keyframes animacaoBotao {
+            0% {
+                margin-left: 0px;
+                background-color: rgb(15, 6, 104);
+            }
+            50% {
+                margin-left: 150px;
+                background-color: rgba(156, 11, 142, 0.738);
+            }
+            100% {
+                margin-left: 0px;
+                background-color: rgb(14, 6, 79);
+            }
+        }
+
+        button {
+            padding: 40px 70px;  
+            border-radius: 45px;  
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            animation: animacaoBotao 3s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <button>Clique Aqui </button>
+
+</body>
+</html>
