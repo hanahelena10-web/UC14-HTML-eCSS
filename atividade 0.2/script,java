@@ -1,0 +1,19 @@
+const nota1 = 8.5;
+const nota2 = 6.0;
+
+const media = (nota1 + nota2) / 2;
+
+let situacao = "";
+
+if (media < 5) {
+    situacao = "REPROVADO";
+} else if (media >= 5 && media < 7) {
+    situacao = "RECUPERAÇÃO";
+} else {
+    situacao = "APROVADO";
+}
+
+console.log(`Nota 1: ${nota1.toFixed(1)}`);
+console.log(`Nota 2: ${nota2.toFixed(1)}`);
+console.log(`Média: ${media.toFixed(1)}`);
+console.log(`Situação do aluno: ${situacao}`);
