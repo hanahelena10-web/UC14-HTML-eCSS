@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+    <h1 id="titulo"> meu planejador de uso </h1>
+    <h2>novo uso</h2>
+    <input type="text" id=" qual é o usado" placeholder=" digite o nome do aluno">
+    <input type="text" id="tipo de uso" placeholder="digite o nome do uso">
+    <select id=" quantidade de uso">
+         <option value=" selecione a prioridade"></option>
+        <option value=" baixa"></option>
+        <option value=" media "></option>
+        <option value="  alta "></option>
+
+    </select>
+  <button onclick="adicionartarefa()">adicionar</button>
+    Cadastrar Tarefa
+  </button>
+  <button onclick="limparcampo()">  </button>
+       tirar esse usado
+       <button>
+        <p id="messagem"></p>
+        <div class="contadores">
+          <p id="contadores"> pegos cadastrados : 0</p>
+          <p id="contadosConcluidas"> pegos usados com  sucesso : 0</p>
+
+        </div>
+       <button onclick="alterarmodo()">
+        Modo de concntração
+       </button>
+
+       <h2>MINHAS TAREFAS</h2>
+
+       <div id="listatarefas"></div>
+
+       <script src="script.js"></script>
+</div>
+</body>
+</html>
