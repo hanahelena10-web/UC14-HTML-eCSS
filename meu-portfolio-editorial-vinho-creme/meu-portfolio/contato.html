@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato comigo por meio do formulário do portfólio.">
+  <title>Contato | Meu Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">PORTFÓLIO<span>.</span></a>
+    <nav class="site-nav" id="menu-principal" aria-label="Menu principal">
+      <a href="index.html">Início</a><a href="presente.html">Quem sou hoje</a><a href="projetos.html">Projetos</a><a href="futuro.html">Quem quero ser</a><a class="active" href="contato.html">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="botao-tema" type="button" aria-label="Ativar modo claro">☼</button>
+      <button class="icon-button menu-toggle" id="botao-menu" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="page-heading">
+      <p class="script-label">Vamos conversar</p>
+      <h1>ENTRE EM<br>CONTATO<span>.</span></h1>
+      <p class="heading-note">05 — CONTATO / VAMOS CONECTAR</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-copy panel-dark">
+        <p class="script-label">Obrigada pela visita</p>
+        <h2>UMA NOVA CONEXÃO PODE COMEÇAR AQUI<span>.</span></h2>
+        <p>Use o formulário para deixar uma mensagem. Preencha apenas as informações necessárias.</p>
+        <div class="contact-note"><span>LEMBRETE</span><p>Este formulário demonstra validação no navegador. Para receber mensagens de verdade, será necessário conectar um serviço de envio.</p></div>
+      </div>
+
+      <form class="contact-form panel-light" id="form-contato">
+        <div class="form-field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" maxlength="100" required></div>
+        <div class="form-field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        <div class="form-field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5" maxlength="1000" required></textarea></div>
+        <div class="consent-row"><input id="consentimento" name="consentimento" type="checkbox" required><label for="consentimento">Concordo que meus dados sejam usados apenas para responder a esta mensagem.</label></div>
+        <button class="button-link submit-button" type="submit">VALIDAR FORMULÁRIO ↗</button>
+        <p class="form-feedback" id="mensagem-formulario" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html">MEU PORTFÓLIO<span>.</span></a><p>© <span id="ano"></span> [Seu nome]</p><a class="text-link" href="index.html">VOLTAR AO INÍCIO ↑</a>
+  </footer>
+</body>
+</html>
